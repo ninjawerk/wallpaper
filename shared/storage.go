@@ -23,6 +23,6 @@ func  ConnectGCS(projId string){
 		log.Fatalf("Failed to create client gcs: %v", err)
 	}
 
-	Bkt = StorageClient.Bucket("wallpapersanchez")
+	Bkt = StorageClient.Bucket("wallappercollection")
 	
 }
