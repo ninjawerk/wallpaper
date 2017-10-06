@@ -10,8 +10,8 @@ type MainController struct {
 }
 
 func (c *MainController) Get() {
-	//cats :=  new(models.Categories )
-	//cats.Data = []models.Category{
+	//cats7 :=  new(models.Categories )
+	//cats7.Data = []models.Category{
 	//	{
 	//		Title : "McCree",
 	//		Description: "ex",
@@ -116,7 +116,7 @@ func (c *MainController) Get() {
 	//		Thumb: "https://blzgdapipro-a.akamaihd.net/hero/doomfist/hero-select-portrait.png",
 	//	},
 	//}
-	//cats.Save()
+	//cats7.Save()
 	cats ,_ := models.GetAllCategories()
 	sort.Slice(cats.Data, func(i, j int) bool {
 		return cats.Data[i].Title < cats.Data[j].Title
