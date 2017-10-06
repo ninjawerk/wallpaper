@@ -137,7 +137,7 @@ func CreateSizes(file multipart.File, obj *models.Wallpaper) (err error) {
 	var id *uuid.UUID
 	id, _ = uuid.NewV4()
 	thumbId := id.String()
-	obj.Thumb = "https://storage.googleapis.com/wallpapersanchez/" + thumbId + ".jpg"
+	obj.Thumb = "https://storage.googleapis.com/wallappercollection/" + thumbId + ".jpg"
 	go func() {
 		thumb := imaging.Fill(img, 400, 300, imaging.Center, imaging.Lanczos)
 		uploadToGCS(thumb, thumbId)
@@ -146,7 +146,7 @@ func CreateSizes(file multipart.File, obj *models.Wallpaper) (err error) {
 
 	id, _ = uuid.NewV4()
 	displayImageId := id.String()
-	obj.DisplayImage = "https://storage.googleapis.com/wallpapersanchez/" + displayImageId + ".jpg"
+	obj.DisplayImage = "https://storage.googleapis.com/wallappercollection/" + displayImageId + ".jpg"
 	go func() {
 		displayImage := imaging.Resize(img, 1440, 0, imaging.Lanczos)
 		uploadToGCS(displayImage, displayImageId)
@@ -162,7 +162,7 @@ func CreateSizes(file multipart.File, obj *models.Wallpaper) (err error) {
 			targetHeight := CommonResolutions[res].Height
 			nSize := models.Size{
 				Size: fmt.Sprintf("%v", targetWidth) + "x" + fmt.Sprintf("%v", targetHeight),
-				Url:  "https://storage.googleapis.com/wallpapersanchez/" + urlId + ".jpg",
+				Url:  "https://storage.googleapis.com/wallappercollection/" + urlId + ".jpg",
 			}
 			obj.Sizes = append(obj.Sizes, nSize)
 			go func() {
