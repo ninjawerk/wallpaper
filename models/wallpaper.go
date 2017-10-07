@@ -8,6 +8,7 @@ import (
 	"fmt"
 	"github.com/nu7hatch/gouuid"
 	"time"
+	"strings"
 )
 
 type Wallpaper struct {
@@ -49,7 +50,7 @@ func (this *Wallpaper) kind() (str string) {
 func GetFromTag(tag string, offset int, pageSize int) (objs *[]Wallpaper, err error) {
 	ctx := context.Background()
 	q := datastore.NewQuery("wallpaper")
-	q = q.Filter("Tags =", tag)
+	q = q.Filter("Tags =", strings.ToLower(tag))
 
 	q = q.Offset(offset)
 	q = q.Limit(pageSize)
@@ -66,7 +67,7 @@ func GetFromTag(tag string, offset int, pageSize int) (objs *[]Wallpaper, err er
 func GetFromTagCount(tag string) (total int, err error) {
 	ctx := context.Background()
 	q := datastore.NewQuery("wallpaper")
-	q = q.Filter("Tags =", tag)
+	q = q.Filter("Tags =", strings.ToLower(tag))
 
 	//get count
 	count, erc := shared.DatastoreClient.Count(ctx, q)

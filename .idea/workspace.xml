@@ -2,11 +2,11 @@
 <project version="4">
   <component name="BookmarkManager">
     <bookmark url="file://$PROJECT_DIR$/controllers/upload.go" description="&#9;c.TplName = &quot;upload.tpl&quot;&#10;&#9;title := c.GetString(&quot;t..." line="19" />
-    <bookmark url="file://$PROJECT_DIR$/models/wallpaper.go" description="func  GetFromTag(tag string, offset int,pageSize i..." line="48" />
+    <bookmark url="file://$PROJECT_DIR$/models/wallpaper.go" description="func  GetFromTag(tag string, offset int,pageSize i..." line="49" />
   </component>
   <component name="ChangeListManager">
     <list default="true" id="992d6f53-e028-4937-bd5e-ff73be5f0334" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/utils/imageresize.go" afterPath="$PROJECT_DIR$/utils/imageresize.go" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/models/wallpaper.go" afterPath="$PROJECT_DIR$/models/wallpaper.go" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -73,8 +73,8 @@
       <file leaf-file-name="categories.go" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/controllers/categories.go">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="323">
-              <caret line="19" column="21" lean-forward="false" selection-start-line="19" selection-start-column="12" selection-end-line="19" selection-end-column="21" />
+            <state relative-caret-position="289">
+              <caret line="17" column="37" lean-forward="false" selection-start-line="17" selection-start-column="37" selection-end-line="17" selection-end-column="37" />
               <folding>
                 <element signature="e#21#120#0" expanded="true" />
               </folding>
@@ -82,11 +82,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="imageresize.go" pinned="false" current-in-tab="true">
+      <file leaf-file-name="imageresize.go" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/utils/imageresize.go">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="401">
-              <caret line="164" column="73" lean-forward="false" selection-start-line="164" selection-start-column="73" selection-end-line="164" selection-end-column="73" />
+            <state relative-caret-position="571">
+              <caret line="162" column="22" lean-forward="true" selection-start-line="162" selection-start-column="22" selection-end-line="162" selection-end-column="22" />
               <folding>
                 <element signature="e#15#257#0" expanded="true" />
               </folding>
@@ -104,13 +104,13 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="wallpaper.go" pinned="false" current-in-tab="false">
+      <file leaf-file-name="wallpaper.go" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/models/wallpaper.go">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="788">
-              <caret line="111" column="0" lean-forward="false" selection-start-line="111" selection-start-column="0" selection-end-line="111" selection-end-column="0" />
+            <state relative-caret-position="434">
+              <caret line="64" column="1" lean-forward="true" selection-start-line="64" selection-start-column="1" selection-end-line="64" selection-end-column="1" />
               <folding>
-                <element signature="e#16#177#0" expanded="true" />
+                <element signature="e#16#188#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -174,7 +174,6 @@
         <option value="$PROJECT_DIR$/static/js/pageloading.js" />
         <option value="$PROJECT_DIR$/views/wallpaper.tpl" />
         <option value="$PROJECT_DIR$/controllers/baseController.go" />
-        <option value="$PROJECT_DIR$/models/wallpaper.go" />
         <option value="$PROJECT_DIR$/routers/router.go" />
         <option value="$PROJECT_DIR$/views/index.tpl" />
         <option value="$PROJECT_DIR$/controllers/recent.go" />
@@ -187,6 +186,7 @@
         <option value="$PROJECT_DIR$/conf/app.conf" />
         <option value="$PROJECT_DIR$/shared/storage.go" />
         <option value="$PROJECT_DIR$/utils/imageresize.go" />
+        <option value="$PROJECT_DIR$/models/wallpaper.go" />
       </list>
     </option>
   </component>
@@ -736,12 +736,12 @@
       <updated>1507056015566</updated>
       <workItem from="1507056016891" duration="37772000" />
       <workItem from="1507183152076" duration="19734000" />
-      <workItem from="1507237481142" duration="8914000" />
+      <workItem from="1507237481142" duration="10812000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="66420000" />
+    <option name="totallyTimeSpent" value="68318000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="2576" height="1416" extended-state="6" />
@@ -828,7 +828,7 @@
         <state relative-caret-position="799">
           <caret line="53" column="18" lean-forward="false" selection-start-line="53" selection-start-column="18" selection-end-line="53" selection-end-column="18" />
           <folding>
-            <element signature="e#16#177#0" expanded="true" />
+            <element signature="e#16#188#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1127,16 +1127,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/controllers/categories.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="19" column="21" lean-forward="false" selection-start-line="19" selection-start-column="12" selection-end-line="19" selection-end-column="21" />
-          <folding>
-            <element signature="e#21#120#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Dockerfile">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="17">
@@ -1150,16 +1140,6 @@
         <state relative-caret-position="17">
           <caret line="1" column="13" lean-forward="false" selection-start-line="1" selection-start-column="13" selection-end-line="1" selection-end-column="13" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/models/wallpaper.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="788">
-          <caret line="111" column="0" lean-forward="false" selection-start-line="111" selection-start-column="0" selection-end-line="111" selection-end-column="0" />
-          <folding>
-            <element signature="e#16#177#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1191,10 +1171,30 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/utils/imageresize.go">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="401">
-          <caret line="164" column="73" lean-forward="false" selection-start-line="164" selection-start-column="73" selection-end-line="164" selection-end-column="73" />
+        <state relative-caret-position="571">
+          <caret line="162" column="22" lean-forward="true" selection-start-line="162" selection-start-column="22" selection-end-line="162" selection-end-column="22" />
           <folding>
             <element signature="e#15#257#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/controllers/categories.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="289">
+          <caret line="17" column="37" lean-forward="false" selection-start-line="17" selection-start-column="37" selection-end-line="17" selection-end-column="37" />
+          <folding>
+            <element signature="e#21#120#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/models/wallpaper.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="434">
+          <caret line="64" column="1" lean-forward="true" selection-start-line="64" selection-start-column="1" selection-end-line="64" selection-end-column="1" />
+          <folding>
+            <element signature="e#16#188#0" expanded="true" />
           </folding>
         </state>
       </provider>
