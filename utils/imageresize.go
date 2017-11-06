@@ -5,9 +5,9 @@ import (
 	"image/jpeg"
 
 	"github.com/disintegration/imaging"
-	"github.com/BeastSanchez/wallpaper/models"
+	"github.com/VoidArtanis/wallpaper/models"
 	"github.com/nu7hatch/gouuid"
-	"github.com/BeastSanchez/wallpaper/shared"
+	"github.com/VoidArtanis/wallpaper/shared"
 	"golang.org/x/net/context"
 	"image"
 	"fmt"

@@ -3,9 +3,9 @@ package controllers
 import (
 	//"golang.org/x/net/context"
 	//"google.golang.org/appengine/datastore"
-	"github.com/BeastSanchez/wallpaper/models"
+	"github.com/VoidArtanis/wallpaper/models"
 	"strings"
-	"github.com/BeastSanchez/wallpaper/utils"
+	"github.com/VoidArtanis/wallpaper/utils"
 )
 
 type UploadController struct {

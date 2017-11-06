@@ -3,7 +3,7 @@ package models
 import (
 	"cloud.google.com/go/datastore"
 	"golang.org/x/net/context"
-	"github.com/BeastSanchez/wallpaper/shared"
+	"github.com/VoidArtanis/wallpaper/shared"
 
 	"fmt"
 	"github.com/nu7hatch/gouuid"
@@ -74,6 +74,7 @@ func GetFromTagCount(tag string) (total int, err error) {
 	if erc != nil {
 		return 0, erc
 	}
+
 	return count, nil
 }
 

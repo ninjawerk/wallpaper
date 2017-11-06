@@ -1,9 +1,9 @@
 package main
 
 import (
-	_ "github.com/BeastSanchez/wallpaper/routers"
+	_ "github.com/VoidArtanis/wallpaper/routers"
 	"github.com/astaxie/beego"
-	"github.com/BeastSanchez/wallpaper/shared"
+	"github.com/VoidArtanis/wallpaper/shared"
 )
 
 func main() {

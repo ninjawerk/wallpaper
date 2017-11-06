@@ -1,7 +1,7 @@
 package routers
 
 import (
-	"github.com/BeastSanchez/wallpaper/controllers"
+	"github.com/VoidArtanis/wallpaper/controllers"
 	"github.com/astaxie/beego"
 )
 

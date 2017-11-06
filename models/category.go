@@ -3,7 +3,7 @@ package models
 import (
 	"cloud.google.com/go/datastore"
 	"golang.org/x/net/context"
-	"github.com/BeastSanchez/wallpaper/shared"
+	"github.com/VoidArtanis/wallpaper/shared"
 	"fmt"
 )
 

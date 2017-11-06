@@ -1,7 +1,7 @@
 package controllers
 
 import (
-	"github.com/BeastSanchez/wallpaper/models"
+	"github.com/VoidArtanis/wallpaper/models"
 	"github.com/astaxie/beego/utils/pagination"
 )
 
